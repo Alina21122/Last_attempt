@@ -1,0 +1,17 @@
+.header__burger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+}
+@media (max-width: 768px) {
+  .header__burger {
+      display: block;
+  }
+  
+}

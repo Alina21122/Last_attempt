@@ -1,0 +1,37 @@
+.header__mobile-nav {
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #fff;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.header__mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header__mobile-nav ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.header__mobile-nav ul li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+@media (max-width: 768px) {
+  .header__nav {
+      display: none;
+  }
+  .header__mobile-nav {
+      display: none;
+      flex-direction: column;
+  }
+  .header__mobile-nav.show {
+      display: block;
+  }
+}

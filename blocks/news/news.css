@@ -1,0 +1,48 @@
+.redirect-button {
+  background-color: #f9b22f; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 50px; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.redirect-button:hover {
+  background-color: #fabe75; 
+  transform: scale(1.05);
+}
+
+.news {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.news .item-subtitle {
+  line-height: 1.2;
+  color: #000000;
+}
+.news img,
+.news .news__image {
+  width: 100%;
+  height: 100%;
+ 
+  object-fit: cover;
+}
+
+.news .reviews__content {
+  position: relative;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.news ,
+.news .booking__button,
+.news .item-title {
+  color: #232323;
+}
+.news .reviews__header {
+  max-width: 800px;
+}  
