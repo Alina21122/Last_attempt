@@ -1,8 +1,0 @@
-.gallery-slide {
-  display: none;
-  text-align: center;
-}
-
-.gallery-slide.active {
-  display: block;
-}
