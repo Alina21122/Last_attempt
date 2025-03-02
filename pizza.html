@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пиццы</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Пиццы</h1>
+        <a href="Menu.html" class="redirect-button">Вернуться</a>
+    </header>
+
+    <!-- Фильтрация и поиск в одном блоке -->
+    <div class="filter-container">
+        <fieldset>
+        <div>
+            <label for="searchInput">Поиск блюд:</label>
+            <input type="text" id="searchInput" placeholder="Введите название или ингредиент">
+            <button id="searchButton">Найти</button>
+        </div>
+        <div>
+            <label for="minPrice">Мин. цена:</label>
+            <input type="number" id="minPrice" placeholder="Например, 100">
+            <p>
+            <label for="maxPrice">Макс. цена:</label>
+            <input type="number" id="maxPrice" placeholder="Например, 120">
+            
+            <button id="filterButton">Применить фильтр</button>
+        </div>
+        </fieldset>
+    </div>
+
+    <div class="menu-container">
+        <article class="menu-card" data-price="112">
+            <figure>
+                <img src="images/content/menu/pizza/pepperoni.png" alt="Pepperoni">
+            </figure>
+            <h3 class="menu-card__title">Пепперони</h3>
+            <p class="menu-card__description">Пикантная пепперони, томатный соус, моцарелла, томаты, свежий базилик.</p>
+            <p class="menu-card__details">Калорийность: 1325 Ккал.<br>35 см / 450 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">112 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="99">
+            <figure>
+                <img src="images/content/menu/pizza/margarita.png" alt="Margarita">
+            </figure>
+            <h3 class="menu-card__title">Маргарита</h3>
+            <p class="menu-card__description">Итальянские травы, томатный соус, моцарелла, томаты.</p>
+            <p class="menu-card__details">Калорийность: 1030 Ккал.<br>35 см / 400 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">99 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="103">
+            <figure>
+                <img src="images/content/menu/pizza/carbonara.png" alt="Carbonara">
+            </figure>
+            <h3 class="menu-card__title">Карбонара</h3>
+            <p class="menu-card__description">Ветчина, итальянские травы, маринованная морковь.</p>
+            <p class="menu-card__details">Калорийность: 1253 Ккал.<br>30 см / 450 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">103 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="123">
+            <figure>
+                <img src="images/content/menu/pizza/italian.png" alt="Italian">
+            </figure>
+            <h3 class="menu-card__title">Итальянская</h3>
+            <p class="menu-card__description">Пикантная пепперони, ветчина, бекон, базилик, томаты, шампиньоны, оливки.</p>
+            <p class="menu-card__details">Калорийность: 1200 Ккал.<br>30 см / 450 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">123 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="127">
+            <figure>
+                <img src="images/content/menu/pizza/julienne.png" alt="Julienne">
+            </figure>
+            <h3 class="menu-card__title">Жульен</h3>
+            <p class="menu-card__description">Цыпленок копченый, яйцо, лук репчатый, моцарелла, соус грибной, сыр.</p>
+            <p class="menu-card__details">Калорийность: 1020 Ккал.<br>40 см / 850 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">127 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+    </div>
+    
+    <!-- Модальное окно -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <button class="close-modal">&times;</button>
+            <img class="modal-image" src="#" alt="Изображение блюда">
+            <div class="modal-content">
+                <h2 class="modal-title">название</h2>
+                <p class="modal-description"></p>
+                <p class="modal-details"></p>
+                <div class="modal-footer">
+                    <span class="modal-price"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-menu.js"></script>
+
+</body>
+</html>

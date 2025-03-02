@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вкусная Атмосфера</title>
+
+
+  <link rel="stylesheet" href="https://ai.mobirise.com/assets/startm5/bootstrap/css/bootstrap-grid.min.css?v=m3frcrn2">
+  <link rel="stylesheet" href="https://ai.mobirise.com/assets/startm5/bootstrap/css/bootstrap-reboot.min.css?v=m3frcrn2">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+
+<!-- Шрифты-->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap"></noscript>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;700&display=swap"></noscript>
+  <link rel="stylesheet" href="https://ai-builder.mobirise.com/api/v2/themes/startm5-next/additional.css?v=0Tg50PK5XtpL3E-AsAXeYA&backgroundColor=%23FFEEE6&primaryColor=%23FFBE0B&secondaryColor=%238338EC&successColor=%2322B571&infoColor=%230BACCC&warningColor=%23D7A100&dangerColor=%23B7202E&mainFont=Golos%20Text&display1Font=Golos%20Text&display1Size=5&display2Font=Golos%20Text&display2Size=4&display5Font=Golos%20Text&display5Size=2.5&display7Font=Golos%20Text&display7Size=1.4&display4Font=Golos%20Text&display4Size=1.2&isRoundedImages=true&isRoundedButtons=true&isLargeButtons=true&isGhostButtonBorder=true&underlinedLinks=false&isAnimatedOnScroll=false&isScrollToTopButton=false" type="text/css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;700&display=swap"></noscript>
+  
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+ 
+ <!-- Меню -->  
+ <header class="header"> 
+  <nav class="header__nav header__nav_dropdown header__nav_fixed ">
+    <div class="container">
+      <div class="header__brand">
+        <span class="header__logo">
+          <img src="images/interface/logo/logo.png" alt="logo" style="height: 4.3rem;">
+        </span>
+        <span >
+          <a class=" text-black display-4" href="#">ВкуснаяАтмосфера</a>
+        </span>
+      </div>
+      <ul class="header__list">          
+        <li class="header__item  display-5">
+          <a href="index.html" class="text-white">Главная</a>
+        </li>
+        <li class="header__item  display-5">
+          <a href="Menu.html" class="text-white">Меню</a>
+        </li>
+        <li class="header__item  display-5">
+          <a href="Reviews.html" class="text-white">Бронирование</a>
+        </li>
+        <li class="header__item  display-5">
+          <a href="News.html" class="text-white">Отзывы</a>
+        </li>
+        <li class="header__item  display-5">
+          <a href="News.html" class="text-white">Новости</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<button class="header__burger" id="menuToggle">
+  ☰
+</button>
+<nav class="header__mobile-nav" id="navMenu">
+  <ul>
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="Menu.html">Меню</a></li>
+      <li><a href="Booking.html">Бронирование</a></li>
+      <li><a href="Reviews.html">Отзывы</a></li>
+      <li><a href="News.html">Новости</a></li>
+      <li><a href="Contacts.html">Контакты</a></li>
+  </ul>
+</nav> 
+</header>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menuToggle");
+  const navMenu = document.getElementById("navMenu");
+
+  menuToggle.addEventListener("click", function () {
+      navMenu.classList.toggle("show");
+  });
+
+  // Закрытие меню при клике вне его области
+  document.addEventListener("click", function (event) {
+      if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+          navMenu.classList.remove("show");
+      }
+  });
+});
+</script>
+
+<!-- Начало главной странички -->
+<section class="hero hero_fullscreen">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-12 col-md-8">
+      <h1 class=" text-white mb-4 display-1">
+        <strong>Вкусная Атмосфера</strong>
+      </h1>
+      <p class=" text-white mb-4 display-7">Погрузитесь в мир гастрономического наслаждения и веселья!!</p>
+    </div>
+  </div>
+</div>
+<img class="hero__image" src="images/interface/backgrounds/freepik-expand-61135.png" alt="фото ресторана" style="transform: translate3d(0px, 0px, 0px);">
+</section>
+
+<!-- Свяжитесь с нами -->
+<section class="contact-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 content-head">
+        <div class=" mb-5">
+          <h3 class=" align-center mb-0 display-2">
+            <strong>Свяжитесь с нами</strong>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8 mx-auto mbr-form">
+        <form
+          action="https://formspree.io/f/mwppvpka"
+          method="POST"
+          class="mbr-form form-with-styler"
+        >
+
+        <fieldset>
+          <legend>Контактная информация</legend>
+
+          <div class="dragArea row">
+            <div class="col-md-12 form-group mb-3">
+              <input
+                type="email"
+                name="email"
+                placeholder="Ваш email"
+                class="form-control"
+                required
+              >
+            </div>
+            <div class="col-md-12 form-group mb-3">
+              <textarea
+                name="message"
+                placeholder="Ваше сообщение"
+                class="form-control"
+                required
+              ></textarea>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12 align-center">
+              <button type="submit" class="btn btn-primary display-7">
+                Отправить
+              </button>
+            </div>
+          </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Соцсети -->    
+<section class="social-links " >
+    <div class="container">
+      
+        <div class="row">
+            <h3 class=" align-center mb-5 mbr-fonts-style display-2">
+                <strong>Следите за нами в социальных сетях</strong>
+            </h3>
+            <div class="col-12">
+                <div class="social-links__list">
+                    <div class="social-links__item">
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <span class="social-links__icon socicon socicon-facebook"><img src="images/interface/icons/social/facebook.png" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="social-links__item">
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <span class="social-links__icon socicon-instagram socicon"><img src="images/interface/icons/social/instagram.png" alt=""></span>
+                        </a>
+                    </div>
+                    <div class="social-links__item">
+                      <a href="https://vk.com/" target="_blank">
+                          <span class="social-links__icon socicon socicon-vk"><img src="images/interface/icons/social/vk.png" alt=""></span>
+                      </a>
+                  </div>
+                  <div class="social-links__item">
+                      <a href="https://web.telegram.org/k/" target="_blank">
+                          <span class="social-links__icon socicon socicon-telegram"><img src="images/interface/icons/social/telegram.png" alt=""></span>
+                      </a>
+                  </div>
+                </div>
+    <address>
+    <p class="cardTitle mbr-fonts-style mb-2 display-5">
+        <strong>Контакты</strong>
+    </p>
+    <ul class="list mbr-fonts-style display-7">
+      <li class="mbr-text item-wrap">Телефон: +373 775 86 047</li>
+      <li class="mbr-text item-wrap">WhatsApp: +373 775 86 047</li>
+      <li class="mbr-text item-wrap">Email: alinochka200455@gmail.com</li>
+      <li class="mbr-text item-wrap">Адрес:  Moldova </li>
+      <li class="mbr-text item-wrap">Часы работы: Пн-Вс: 10:00 - 23:00</li>
+    </ul>
+    </address>
+            </div>
+        </div>
+    </div>
+    <div id="map" style="height: 500px;"></div>
+   
+</section>
+
+<!-- Подвал-меню -->
+<footer class="footer" >
+  <div class="container">
+      <div class="row">
+          <div class="footer__links">
+              <ul class="header__list">
+                <li class="header__item  display-6">
+                  <a href="#hero-17-uxk8jD0QWW" class="text-white">Главная</a>
+                </li>
+                <li class="header__item  display-6">
+                  <a href="Menu.html" class="text-white">Меню</a>
+                </li>
+                <li class="header__item  display-6">
+                  <a href="Booking.html" class="text-white">Бронирование</a>
+                </li>
+                <li class="header__item  display-6">
+                  <a href="Reviews.html" class="text-white">Отзывы</a>
+                </li>
+                <li class="header__item  display-6">
+                  <a href="News.html" class="text-white">Новости</a>
+                </li>
+                <li class="header__item  display-6">
+                  <a href="Contacts.html" class="text-white">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          <div class="col-12 mt-4">
+              <p class=" copyright display-7">
+                  © 2025. Джуринская Алина
+              </p>
+          </div>
+      </div>
+  </div>
+</footer>
+
+   
+  <script src="script-contacts.js"></script>
+</body>
+</html>
