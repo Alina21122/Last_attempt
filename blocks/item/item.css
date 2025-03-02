@@ -1,0 +1,19 @@
+.item:focus,
+ span:focus {
+  outline: none;
+}
+ .item {
+  cursor: pointer;
+}
+.news .item:focus,
+.news span:focus {
+  outline: none;
+}
+.news .item {
+  margin-bottom: 2rem;
+}
+@media (max-width: 767px) {
+  .news .item {
+    margin-bottom: 1rem;
+  }
+}

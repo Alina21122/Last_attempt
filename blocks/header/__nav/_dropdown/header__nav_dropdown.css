@@ -1,0 +1,11 @@
+.header__nav_dropdown {
+  left: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.45s ease;
+  z-index: 1030;
+  background: #282828; }
+.header__nav_dropdown .header__nav_fixed {
+  position: fixed; }

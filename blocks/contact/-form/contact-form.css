@@ -1,0 +1,24 @@
+.contact-form {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: transparent;
+}
+.contact-form .mbr-overlay {
+  background-color: #ffffff;
+  opacity: 0.4;
+}
+.contact-form form .booking__button {
+  text-align: center;
+  width: 100%;
+}
+.contact-form form .booking__button .btn {
+  display: inline-flex;
+}
+@media (max-width: 991px) {
+  .contact-form form .booking__button .btn {
+    width: 100%;
+  }
+}
+.contact-form .reviews__header {
+  max-width: 800px;
+}   

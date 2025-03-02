@@ -1,0 +1,13 @@
+.menu-card__cart-btn {
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.menu-card__cart-btn:hover {
+  background: #e64a19;
+}

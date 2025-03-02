@@ -1,0 +1,25 @@
+.social-links {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.social-links .social-links__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.social-links .social-links__list .social-links__item {
+  margin: 8px;
+} 
+.social-links .social-links__list .social-links__item a .social-links__icon {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  font-size: 32px;
+ 
+  transition: all 0.3s ease-in-out;
+} 

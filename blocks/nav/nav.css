@@ -1,0 +1,10 @@
+nav .gallery__button {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+input {
+  padding: 5px;
+  margin: 10px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

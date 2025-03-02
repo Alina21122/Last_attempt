@@ -1,0 +1,111 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 196, 3, 0.5); 
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%; /* Окно не выходит за границы экрана */
+  max-height: 90vh; /* Не превышает высоту экрана */
+  overflow-y: auto; /* Если контент слишком длинный, появляется скролл */
+}
+@media (max-width: 768px) {
+    .modal {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+  .modal-overlay {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+  
+    .modal-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .modal-header, .modal-footer {
+        padding: 10px;
+    }
+
+    .modal-body {
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+  
+  .modal-image {
+    width: 100%;
+    height: auto;
+    max-height: 50vh; 
+    object-fit: contain; 
+    border-radius: 5px;
+    }
+    .close {
+        font-size: 20px;
+        top: 10px;
+        right: 10px;
+    }
+
+  .close-modal {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .modal-footer {
+        display: 100%;
+        justify-content: center;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 760px) {
+    .modal-image {
+        height: 40vh; /* На мобильных устройствах уменьшаем */
+    }
+}
+/* Адаптивность для мобильных */
+@media (max-width: 600px) {
+  .modal {
+      flex-direction: column;
+      align-items: center;
+  }
+ .modal-image {
+        height: 40vh; /* На мобильных устройствах уменьшаем */
+    }
+}
