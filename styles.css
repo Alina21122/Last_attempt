@@ -1,0 +1,62 @@
+@import url(blocks/header/header.css);
+@import url(blocks/header/__nav/_dropdown/header__nav_dropdown.css);
+@import url(blocks/header/__brand/header__brand.css);
+@import url(blocks/header/__item/header__item.css);
+@import url(blocks/header/__list/header__list.css);
+@import url(blocks/header/__burger/header__burger.css);
+@import url(blocks/header/__mobile/header__mobile.css);
+@import url(blocks/form/form-control.css);
+@import url(blocks/body/body.css);
+@import url(blocks/about/about.css);
+@import url(blocks/booking/booking.css);
+@import url(blocks/booking/__button/booking__button.css);
+@import url(blocks/button/button.css);
+@import url(blocks/categories/categories.css);
+@import url(blocks/categories/__content/categories__content.css);
+@import url(blocks/categories/__item/categories__item.css);
+@import url(blocks/social/-links/social-links.css);
+@import url(blocks/social/-links/__list/social-links__list.css);
+@import url(blocks/caption/-container/caption-container.css);
+@import url(blocks/close/close.css);
+@import url(blocks/close/-btn/close-btn.css);
+@import url(blocks/close/-moda/close-moda.css);
+@import url(blocks/contact/-form/contact-form.css);
+@import url(blocks/container/container.css);
+@import url(blocks/copyright/copyright.css);
+@import url(blocks/dialog/dialog.css);
+@import url(blocks/filter/-container/filter-container.css);
+@import url(blocks/footer/footer.css);
+@import url(blocks/footer/__links/footer__links.css);
+@import url(blocks/gallery/-modal/gallery-modal.css);
+@import url(blocks/gallery/-slide/gallery-slide.css);
+@import url(blocks/gallery/__button/gallery__button.css);
+@import url(blocks/hero/hero.css);
+@import url(blocks/hero/_fullscreen/hero_fullscreen.css);
+@import url(blocks/item/item.css);
+@import url(blocks/label/label.css);
+@import url(blocks/menu/_container/menu_container.css);
+@import url(blocks/menu/-grid/menu-grid.css);
+@import url(blocks/menu/-card/menu-card.css);
+@import url(blocks/menu/-card/__cart-btn/menu-card__cart-btn.css);
+@import url(blocks/menu/-card/__description/menu-card__description.css);
+@import url(blocks/menu/-card/__details/menu-card__details.css);
+@import url(blocks/menu/-card/__footer/menu-card__footer.css);
+@import url(blocks/menu/-card/__price/menu-card__price.css);
+@import url(blocks/menu/-card/__title/menu-card__title.css);
+@import url(blocks/modal/modal.css);
+@import url(blocks/modal/-content/modal-content.css);
+@import url(blocks/modal/-imag/modal-imag.css);
+@import url(blocks/modal/-overlay/modal-overlay.css);
+@import url(blocks/nav/nav.css);
+@import url(blocks/news/news.css);
+@import url(blocks/next/next.css);
+@import url(blocks/prev/prev.css);
+@import url(blocks/reviews/reviews.css);
+@import url(blocks/redirect/-button/redirect-button.css);
+@import url(blocks/grid/-container/grid-container.css);
+@import url(blocks/grid/-item/grid-item.css);
+
+
+
+
+:root{--background: #FFEEE6; --background-dark: #50250E; --dominant-color: #FB5607; --dominant-dark-color: #613029; --dominant-darken-color: #C01C00; --dominant-light-color: #D5C0B1; --dominant-lighten-color: #FF893F; --primary-color: #FFBE0B; --primary-dark-color: #522612; --primary-darken-color: #C78E00; --primary-light-color: #E5E0C8; --primary-lighten-color: #FFF051; --secondary-color: #8338EC; --secondary-dark-color: #3F3762; --secondary-darken-color: #4A00B8; --secondary-light-color: #E2D1E3; --secondary-lighten-color: #B969FF; --success-color: #22B571; --success-dark-color: #1F421F; --success-darken-color: #008445; --success-light-color: #D1E9DA; --success-lighten-color: #63E8A0; --danger-color: #B7202E; --danger-dark-color: #5C2C25; --danger-darken-color: #800006; --danger-light-color: #DEC2C0; --danger-lighten-color: #EF5857; --warning-color: #D7A100; --warning-dark-color: #51270C; --warning-darken-color: #A17300; --warning-light-color: #E8E2CA; --warning-lighten-color: #FFD247; --info-color: #0BACCC; --info-dark-color: #043E5A; --info-darken-color: #007C9B; --info-light-color: #CEEDED; --info-lighten-color: #61DEFF; --background-text: #000000; --background-dark-text: #FFFFFF; --dominant-text: #FFFFFF; --dominant-dark-text: #FFFFFF; --dominant-darken-text: #FFFFFF; --dominant-light-text: #000000; --dominant-lighten-text: #000000; --primary-text: #000000; --primary-dark-text: #FFFFFF; --primary-darken-text: #000000; --primary-light-text: #000000; --primary-lighten-text: #000000; --secondary-text: #FFFFFF; --secondary-dark-text: #FFFFFF; --secondary-darken-text: #FFFFFF; --secondary-light-text: #000000; --secondary-lighten-text: #000000; --success-text: #FFFFFF; --success-dark-text: #FFFFFF; --success-darken-text: #FFFFFF; --success-light-text: #000000; --success-lighten-text: #000000; --danger-text: #FFFFFF; --danger-dark-text: #FFFFFF; --danger-darken-text: #FFFFFF; --danger-light-text: #000000; --danger-lighten-text: #FFFFFF; --warning-text: #000000; --warning-dark-text: #FFFFFF; --warning-darken-text: #FFFFFF; --warning-light-text: #000000; --warning-lighten-text: #000000; --info-text: #FFFFFF; --info-dark-text: #FFFFFF; --info-darken-text: #FFFFFF; --info-light-text: #000000; --info-lighten-text: #000000;  --display1-font: 'Golos Text', sans-serif; --display2-font: 'Golos Text', sans-serif; --display4-font: 'Golos Text', sans-serif; --display5-font: 'Golos Text', sans-serif; --display7-font: 'Golos Text', sans-serif;}

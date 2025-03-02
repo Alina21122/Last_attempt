@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салаты</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Салаты</h1>
+        <a href="Menu.html" class="redirect-button">Вернуться</a>
+    </header>
+
+   <!-- Фильтрация и поиск в одном блоке -->
+   <div class="filter-container">
+    <fieldset>
+    <div>
+        <label for="searchInput">Поиск блюд:</label>
+        <input type="text" id="searchInput" placeholder="Введите название или ингредиент">
+        <button id="searchButton">Найти</button>
+    </div>
+    <div>
+        <label for="minPrice">Мин. цена:</label>
+        <input type="number" id="minPrice" placeholder="Например, 100">
+        <p>
+        <label for="maxPrice">Макс. цена:</label>
+        <input type="number" id="maxPrice" placeholder="Например, 120">
+        
+        <button id="filterButton">Применить фильтр</button>
+    </div>
+    </fieldset>
+</div>
+
+    <div class="menu-container">
+        <article class="menu-card" data-price="112">
+            <figure>
+                <img src="images/content/menu/salads/nautical.png" alt="Nautical">
+            </figure>
+            <h3 class="menu-card__title">Морской</h3>
+            <p class="menu-card__description">Мидии, креветки, кальмар, яйцо куриное, огурец, майонез, горчица, черный молотый перец.</p>
+            <p class="menu-card__details">Калорийность: 120 Ккал.<br>25 см / 400 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">112 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="99">
+            <figure>
+                <img src="images/content/menu/salads/nicoise.png" alt="Nicoise">
+            </figure>
+            <h3 class="menu-card__title">Нисуаз</h3>
+            <p class="menu-card__description">Картофель, фасоль стручковая, огурец, томаты красные, соус горчичный, лук, тунец в кунжуте, яйца.</p>
+            <p class="menu-card__details">Калорийность: 500 Ккал.<br>25 см / 400 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">99 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        <article class="menu-card" data-price="103">
+            <figure>
+                <img src="images/content/menu/salads/caesar.png" alt="Caesar">
+            </figure>
+            <h3 class="menu-card__title">Цезарь</h3>
+            <p class="menu-card__description">Зеленый салат, помидоры, куриное филе, белый хлеб, соус «Цезарь», сливочное масло, чеснок, сыр пармезан.</p>
+            <p class="menu-card__details">Калорийность: 423 Ккал.<br>25 см / 400 г</p>
+            <div class="menu-card__footer">
+                <span class="menu-card__price">103 Р</span>
+                <button class="menu-card__cart-btn">🛒</button>
+            </div>
+        </article>
+        
+    </div>
+
+    <!-- Модальное окно -->
+    <div id="modalOverlay" class="modal-overlay">
+        <div class="modal">
+            <button class="close-modal">&times;</button>
+            <img class="modal-image" src="#" alt="Изображение блюда">
+            <div class="modal-content">
+                <h2 class="modal-title">название</h2>
+                <p class="modal-description"></p>
+                <p class="modal-details"></p>
+                <div class="modal-footer">
+                    <span class="modal-price"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script-menu.js"></script>
+</body>
+</html>
